@@ -1,0 +1,272 @@
+@import "~common/stylus/variable.styl"
+
+.table {
+  &+.table{
+    margin-top:10px
+  }
+  &.table-12{
+  	.table-td,.item-title{
+  		font-size:$font-x
+  	}
+  }
+  &.table-14{
+    .table-td,.item-title{
+      font-size:$font-s
+    }
+  }
+	&-nodata{
+		font-size:$font-s
+		color:$size-color2
+		text-align:center
+		height:42px
+		border-bottom:1px solid $border-color
+	}
+  &-th {
+    height: 42px
+    color: $size-color2
+    font-size: $font-x   
+    background: url("~images/bg.jpg") repeat-x 0 0 #f7f7f7
+    [class^='th'],th{
+      font-weight:normal
+    }
+  }
+  &-head{
+    border:1px solid $border-color
+    th{
+      height:40px
+      font-weight:normal
+      &:nth-child(2){
+        text-align:left
+      }
+    }
+    .time{
+      font-size:$font-s
+    }
+    .orderid{
+      font-size:$font-x
+      color:$size-color3
+      margin-left:24px
+    }
+    .delete{
+      font-size:$font-x
+      color:$size-color
+    }
+  }
+  &-td {
+    text-align: center
+    line-height:20px
+    color: $size-color3
+    &.order-table-td{
+      td{
+        border-bottom:1px solid $border-color
+      }
+      td:first-child{
+        border-left:1px solid $border-color
+      }
+      td:last-child{
+        border-right:1px solid $border-color
+      }
+      .td-sum {
+        .total{
+          color:$main-color
+        }
+      }
+    }
+    
+    [class^='td'],td{
+      border-bottom: 1px solid $border-color
+      padding: 20px 10px
+      vertical-align:top
+    }
+    .td-muti{
+      border-left:1px solid $border-color
+      border-bottom:none
+    }
+    .c_af7b7a{color:#af7b7a}
+    .c_454545{color:#454545}
+    .c_868686{color:#868686}
+    .c_222222{
+      color:#222222
+      font-weight:bold
+      font-style:normal
+    }
+    
+    .td-item {
+      position:relative
+      padding:20px 10px
+      a{
+        display:block
+      }
+      .item-pic {
+        position:absolute
+        display:block
+        top:20px
+        left:0
+        background-color: #f3f3f3
+        background-size:100% auto
+        img{
+          width:100%
+          height:100%
+        }
+      }
+      .item-info{
+      	position:relative
+      	padding-bottom:18px
+       text-align:left
+      }
+      .item-title {
+        color: $size-color2
+        font-weight:normal
+        height:40px
+        ellipsis-mulit(2)
+        &:hover{
+        	color:$hover-color
+        }
+      }
+      .item-sku {
+        margin: 4px 0 8px
+        color:$size-color3
+      }
+      .item-discount{
+      	position:absolute
+      	bottom:0
+      	display:flex
+      	i{
+      		width:18px
+      		height:18px
+      		background:url('~images/discount.png')
+      		margin-left:4px
+      		&:first-child{
+      			margin-left:0
+      		}
+      	}
+      	.zhe{
+      		background-position:0 0
+      	}
+      	.jiang{
+      		background-position:0 -18px
+      	}
+      	.you{
+      		background-position:0 -36px
+      	}
+      }
+    }
+    .td-item-110{
+      padding-left:120px
+      .item-pic {
+        width:110px
+        height:110px
+      }
+      .item-info{
+        min-height:110px
+      }
+    }
+    .td-item-80{
+      padding-left:90px
+      .item-pic {
+        width:80px
+        height:80px
+      }
+      .item-info{
+        min-height:80px
+      }
+    }
+    .td-sum {
+      .total{
+      	color:$size-color
+      	font-weight:bold
+      }
+      .icon{
+        display:inline-block
+        width:34px
+        height:20px
+        vertical-align:top
+        margin-left:5px
+        background:url('~images/dingjin.png') center no-repeat
+      }
+    }
+    .td-op{
+      line-height:24px
+      padding:20px 0
+      a{
+        color:$size-color2
+        &:hover{
+          color:$hover-color
+        }
+      }
+      .el-button, .el-button.is-round{
+        padding:7px 0
+        width:64px
+        color:#868686
+        margin-top:5px
+        margin-left:0
+        &:first-child{
+          margin-top:0
+        }
+        &:hover{
+          color:$main-color
+        }
+        &.el-button--primary{
+          color:#fff
+          &:hover{
+            color:#fff
+          }
+        }
+        
+      }
+      .time{
+        color:$size-color2
+        margin-bottom:5px
+        i{
+          color:$main-color
+          font-style:normal
+        }
+      }
+    }
+  }
+  &-msg {
+    padding: 20px 14px
+    border-top: 1px dashed $border-color
+    border-bottom: 1px dashed $border-color
+    line-height: 24px
+    font-size: $font-x
+    span{
+      color:$size-color2
+      margin-left:10px
+    }
+    .msg {
+      width: 600px
+      border: 1px solid #fff
+      padding: 0 10px
+      &:focus {
+        outline: 1px solid #fff
+      }
+    }
+  }
+}
+
+.order-payinfo {
+  margin: 20px 0 80px
+  padding: 30px 24px 24px 0
+  background-color: #f7f7f7
+  text-align: right
+  line-height: 24px
+  font-size: $font-x
+  p, span {
+    color: $size-color3
+  }
+  span, em {
+    display: inline-block
+    width: 170px
+  }
+  .total {
+    font-size: $font-s
+    margin-top: 10px
+    color: $size-color2
+  }
+  em {
+    font-size: $font-l
+    color: $num-color
+    font-style: normal
+  }
+}

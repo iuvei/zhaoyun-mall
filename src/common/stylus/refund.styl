@@ -1,0 +1,179 @@
+@import 'variable.styl'
+.refund{
+	&.container{
+		margin:40px auto 98px
+	}
+	background-color:#f8f8f8
+	&-step1{
+		padding:40px 80px 0
+	}
+	&-step2{
+		padding:50px 188px 0
+	}
+	&-goods{
+		display:flex
+		align-items:center
+		padding:10px 0
+		&+.refund-goods{
+			border-top:1px solid $border-color
+		}
+		img{
+			width:80px
+			height:80px
+			background-color:#fff
+		}
+		.info{
+			margin-left:10px
+			font-size:$font-s
+			line-height:20px
+		}
+		.title{
+			color:$size-color2
+		}
+		.sku{
+			color:$size-color3
+		}
+	}
+	&-money .el-form-item__content{
+		.el-input__inner{
+			color:$main-color
+			width:320px
+		}
+		.tip{
+			color:$size-color3
+			line-height:24px
+		}
+	}
+	&-desc .el-form-item__content{
+		.el-textarea__inner{
+			width:600px
+			height:220px
+		}
+	}
+	&-info{
+		text-align:center
+		font-size:0
+		.icon{
+			display:inline-block
+			width:80px
+			height:80px
+		}
+		.icon-edit{
+			background:url('~images/edit.png') no-repeat
+		}
+		.icon-right{
+			background:url('~images/correct.png') no-repeat
+		}
+		.status{
+			font-size:$font-m
+			color:#40a3d9
+			line-height:20px
+			margin-top:40px
+		}
+		.desc{
+			font-size:$font-s
+			color:$size-color3
+			line-height:20px
+			margin-top:20px
+			em{
+				font-style:normal
+				font-weight:bold
+				margin:0 4px
+			}
+			a{
+				color:$main-color
+				margin:0 4px
+			}
+		}
+	}
+	&-btns{
+		.el-button{
+			width:150px
+		}
+	}
+	&-foot{
+		text-align:center
+		line-height:60px
+		font-size:$font-x
+		color:$size-color2
+		margin-top:60px
+		a{
+			margin:0 5px
+			&.c_af7b7a{
+				color:$main-color
+			}
+		}
+	}
+	&-detail{
+		font-size:$font-s
+		color:$size-color2
+		em{
+			color:$num-color
+			font-weight:bold
+			font-style:normal
+		}
+		i{
+			color:$main-color
+			font-style:normal
+		}
+		.detail{
+			&-top{
+				line-height:64px
+				display:flex
+				justify-content: space-between
+				&>span{
+					display:block
+					font-size:$font-m
+				}
+			}
+			&-body{
+				border-top:1px dashed $border-color
+				border-bottom:1px dashed $border-color
+				display:flex
+				padding:20px 0
+				.refund-goods{
+					flex:1
+					padding-right:50px
+					align-items: flex-start
+					img{
+						width:110px
+						height:110px
+					}
+					.title{
+						line-height:24px
+					}
+					.sku{
+						margin-top:10px
+					}
+				}
+				.pricelist{
+					flex:1
+					padding-left:30px
+					border-left:1px dotted $border-color
+					line-height:28px
+				}
+			}
+			&-foot{
+				padding-top:18px
+				display: flex
+				flex-wrap: wrap
+				line-height:32px
+				p{
+					width:50%
+					&:nth-child(2n){
+						padding-left:30px
+					}
+				}
+			}
+		}
+	}
+	.bill-msg{
+		padding:20px 0 20px 100px
+		margin-bottom:20px
+		font-size:$font-s
+		line-height:28px
+		border:1px dashed $main-color
+		color:$size-color2
+		background-color:#f5f2f2
+	}
+}

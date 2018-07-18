@@ -1,0 +1,139 @@
+@import "~common/stylus/variable.styl"
+.app-wrap{
+  position:relative
+  height:auto
+  min-height:100%
+  padding-bottom:60px
+}
+.v-header{
+  background-color:#fbfbfb
+  border-bottom:2px solid $hover-color
+  .container{
+    display:flex
+    height:80px
+    justify-content:space-between
+    align-items:center
+  }
+  a{
+    display:block
+  }
+}
+
+.v-login{
+  width:100%
+  height:600px
+  background-position:center center
+  .container{
+    position:relative
+  }
+  .login{
+    &-box{
+      position:absolute
+      top:80px
+      right:0
+      width:380px
+      border:1px solid $border-color
+      background-color:#fff
+    }
+  }
+  .box{
+    &-tab{
+      display:flex
+      justify-content:space-between
+      padding-top:20px
+      padding-bottom:20px
+      font-size:$font-xl
+      line-height:20px
+      border-bottom:1px solid $border-color
+    }
+    &-cont{
+      padding-left:40px
+      padding-right:40px
+      position:relative
+      .el-button{
+        width:100%
+      }
+    }
+    &-links{
+    	text-align:right
+    	font-size:$font-x
+    	margin-bottom:20px
+    	a{
+    		color:$size-color3
+    		&:hover{
+    			color:$hover-color
+    		}
+    	}
+    }
+    &-entries{
+    	padding:40px 0 30px
+    	.title{
+    		position:relative
+    		font-size:$font-x
+    		color:$size-color3
+    		text-align:center
+    		font-weight:normal
+    		&:before,&:after{
+    			content:''
+    			position:absolute
+    			height:1px
+    			top:6px
+    			background-color:$border-color
+    		}
+    		&:before{
+    			left:50px
+    			right:50%
+    			margin-right:45px
+    		}
+    		&:after{
+    			left:50%
+    			right:50px
+    			margin-left:45px
+    		}
+    	}
+    	.lists{
+    		text-align:center
+    		font-size:0
+    		margin-top:20px
+    		a{
+    			margin:0 10px
+    			font-size:32px
+    		}
+    	}
+    }
+  }
+  .el-input-group__append,.el-input-group__prepend{
+    background-color:#fff
+    padding:0 10px
+    color:$size-color2
+  	.code-button{
+  		margin:-10px
+  		width:112px
+  	}
+  	[class^=el-icon-]{
+  		font-size:20px
+  	}
+  	
+  }
+  .error-msg{
+  	position:absolute
+  	z-index:10
+  	top:-5px
+  	left:40px
+  	right:40px
+  	width:auto
+  }
+}
+
+.v-footer{
+  position:absolute
+  left:0
+  bottom:0
+  width:100%
+  line-height:60px
+  text-align:center
+  font-size:$font-x
+  p{
+    color:$size-color3
+  }
+}

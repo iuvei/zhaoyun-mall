@@ -1,0 +1,95 @@
+// 背景图片
+bg-image($url)
+  background-image: url($url + "@2x.png")
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+    background-image: url($url + "@3x.png")
+
+// 不换行
+no-wrap()
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+//行数限制
+text-hid($h, $ah)
+  position: relative
+  line-height: $h
+  height: $ah
+  overflow: hidden
+  &::after
+    content: " "
+    position: absolute;
+    bottom: 0
+    right: 0
+    padding-left: 40px
+// 扩展点击区域
+extend-click()
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: -10px
+    left: -10px
+    right: -10px
+    bottom: -10px
+
+// after-border
+after-border($w)
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: $w
+    height: 4px
+    bottom: -2px
+    left: 50%
+    transform: translateX(-50%)
+    border-radius: 2px
+    background-color: gold
+
+//hover-hand
+hover-hand()
+  cursor: pointer
+
+border-shadow()
+  border-radius: 6px
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2)
+
+// 鼠标移到商品上的效果
+hover-goods(){
+  a:before{
+    content:''
+    z-index:10
+    position:absolute
+    top:0
+    left:0
+    width:100%
+    height:100%
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, .2)
+    transition:all .2s linear
+  }
+  img{
+    transform:scale(1.05)
+    transition:all .2s linear
+  }
+}
+
+// 单行显示省略号
+ellipsis-simple(){
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+}
+
+// 多行显示省略号
+ellipsis-mulit($num){
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: $num
+  overflow: hidden
+}
+
+user-bg(){
+  padding-top:6px
+  border-bottom:2px solid #fff
+  background: url("~images/bg.png") repeat-x 0 0
+}

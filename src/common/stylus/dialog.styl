@@ -1,0 +1,69 @@
+@import "~common/stylus/variable.styl"
+
+.el-recharge-dialog{
+  background-color:rgba(0,0,0,0.5)
+  .el-dialog{
+    width:600px
+    height:360px
+    top:50%
+    margin-top:-220px
+    &__header{
+      padding: 10px 20px 16px
+      background:url('~images/bg.jpg') repeat-x bottom left
+    }
+    &__headerbtn{
+      top:10px
+    }
+    .ercode{
+      padding-bottom:60px
+      background:url('~images/weichat_ercode.jpg') center bottom no-repeat
+      img{
+        margin:0 auto
+      }
+    }
+  }
+  
+}
+
+.pay-result{
+    padding-top:50px
+    text-align:center
+    .status{
+      color:$size-color2
+      font-size:$font-m
+      font-weight:bold
+      line-height:30px
+      .el-icon-circle-close,.el-icon-circle-check{
+        font-size:30px
+        margin-right:20px
+        vertical-align: top
+      }
+      .el-icon-circle-close{
+        color:$num-color
+      }
+      .el-icon-circle-check{
+        color:#519fa2
+      }
+    }
+    .desc{
+      font-size:$font-x
+      color:$size-color3
+      line-height:20px
+      margin-top:20px
+      i{
+        color:$main-color
+        font-style:normal
+      }
+    }
+    .btns{
+      margin-top:30px
+      .el-button{
+        width:150px
+      }
+      .home-btn{
+        color:$main-color
+        font-size:$font-s
+        margin-left:20px
+      }
+    }
+  }

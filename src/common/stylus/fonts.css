@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-asset:before {
+  content: "\e900";
+}
+.icon-delete:before {
+  content: "\e901";
+}
+.icon-delete_all:before {
+  content: "\e902";
+}
+.icon-ercode:before {
+  content: "\e903";
+}
+.icon-failure:before {
+  content: "\e904";
+}
+.icon-login:before {
+  content: "\e905";
+}
+.icon-money:before {
+  content: "\e906";
+}
+.icon-notice:before {
+  content: "\e907";
+  color: #656565;
+}
+.icon-phone:before {
+  content: "\e908";
+}
+.icon-qq:before {
+  content: "\e909";
+}
+.icon-shopcart:before {
+  content: "\e90a";
+}
+.icon-star:before {
+  content: "\e90b";
+}
+.icon-warning:before {
+  content: "\e90c";
+}
+.icon-weibo:before {
+  content: "\e90d";
+}
+.icon-weichat:before {
+  content: "\e90e";
+}
+.icon-zifub:before {
+  content: "\e90f";
+}
+.icon-service:before {
+  content: "\e910";
+}
+.icon-shopcart2:before {
+  content: "\e911";
+}
+.icon-arrow_desc:before {
+  content: "\e912";
+}
+.icon-arrow_asc:before {
+  content: "\e913";
+}
+.icon-user_bank:before {
+  content: "\e914";
+}
+.icon-user_cert:before {
+  content: "\e915";
+}
+.icon-user_phone:before {
+  content: "\e916";
+}
+.icon-question:before {
+  content: "\e917";
+}
+.icon-fund_deposit:before{
+  content: "\e918";
+}
+.icon-fund_goods:before{
+  content: "\e919";
+}
+.icon-fund_recharge:before{
+  content: "\e91a";
+}
+.icon-yue:before{
+  content: "\e91b";
+}
+.icon-dingpao:before{
+  content: "\e938";
+}
